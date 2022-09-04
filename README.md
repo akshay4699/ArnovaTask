@@ -7,11 +7,15 @@
 
 # Stock_Google 
 
+ 1. Print the highest opening and the lowest closing values of each month for Google.
+
 select month( str_to_date(Date,'%y-%m-%d')) as DateFormat from stocks_google group by DateFormat;
 select  month( str_to_date(Date,'%y-%m-%d')) as DateFormat, max(Open), min(Close) from stocks_google group by DateFormat;
 
 
 # Stock_Netflix
+
+Find the standard deviation of Volume per year for Netflix.
 
 select  year( str_to_date(Date,'%y-%m-%d')) as DateFormat,stddev(Volume) from stocks_netflix group by DateFormat;
 
