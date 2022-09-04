@@ -22,7 +22,7 @@ select (stocks_amazon.Open - stocks_apple.Open) as diff from stocks_amazon join 
  select * from stocks_amazon;
  select Date,(Open-Close) as diff  from stocks_amazon;
  
- # Stock_Amazoon
+ # Stock_Amazon
  
   select Date, max(Open) from stocks_amazon group by Date;
  select Date, max(Open) from stocks_apple group by Date;
