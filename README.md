@@ -4,6 +4,8 @@
 
 [Download Link](https://github.com/akshay4699/ArnovaTask/raw/main/Visualizattion1.twbx)
 
+![](Capture.PNG)
+
 # Stock_Google 
 
  1. Print the highest opening and the lowest closing values of each month for Google.
