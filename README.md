@@ -2,7 +2,7 @@
 
 ## sales-data Visualization 
 
-### Tablue file below:-
+### Tableau file below:-
 [Download Link](https://github.com/akshay4699/ArnovaTask/raw/main/Visualizattion1.twbx)
 
    1. Total Revenue Generated (By Country)
@@ -42,15 +42,15 @@ select * from stocks_amazon;
 select * from stocks_apple;
 select (stocks_amazon.Open - stocks_apple.Open) as diff from stocks_amazon join stocks_apple on stocks_amazon.Date = stocks_apple.Date;
 
-##  4. Find the largest daily return for Amazon. (Daily return is
-calculated by subtracting the opening price from the closing price) (Stock_Amazon)
+ ##  4. Find the largest daily return for Amazon. (Daily return is
+ calculated by subtracting the opening price from the closing price) (Stock_Amazon)
 
  select * from stocks_amazon;
  select Date,(Open-Close) as diff  from stocks_amazon;
  
  ## 5. Print the company name with the highest opening value for each day. (Stock_Amazon)
  
-  select Date, max(Open) from stocks_amazon group by Date;
+ select Date, max(Open) from stocks_amazon group by Date;
  select Date, max(Open) from stocks_apple group by Date;
  select Date, max(Open) from stocks_google group by Date;
  select Date, max(Open) from stocks_microsoft group by Date;
